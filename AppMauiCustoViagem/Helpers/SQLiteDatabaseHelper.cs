@@ -9,7 +9,7 @@ using AppMauiCustoViagem.Models;
 namespace AppMauiCustoViagem.Helpers
 {
     
-    internal class SQLiteDatabaseHelper
+    public class SQLiteDatabaseHelper
     {
         readonly SQLiteAsyncConnection _conn;
 
@@ -30,9 +30,14 @@ namespace AppMauiCustoViagem.Helpers
             return _conn.QueryAsync<Pedagio>(sql,
                 p.Local, p.Valor, p.Id);
         }
-        public Task<List<Produto>> GetAll()
+        public Task<List<Pedagio>> GetAll()
         {
-            return _conn.Table<Produto>().ToListAsync();
+            return _conn.Table<Pedagio>().ToListAsync();
+        }
+
+        public Task<int> Delete(int id)
+        {
+            return _conn.Table<Pedagio>().DeleteAsync(i => i.Id == id);
         }
     }
 }

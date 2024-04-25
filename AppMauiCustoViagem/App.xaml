@@ -5,10 +5,41 @@
              x:Class="AppMauiCustoViagem.App">
     <Application.Resources>
         <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
+                        <!-- Key="nome do estilo" TargetType="Qual
+                componente será aplicado-->
+
+                        <!--Property="Propriedade a ser alterada" 
+                value= valor a se alteradao""-->
+            <Style x:Key="plainButton" TargetType="Button">              
+                <Setter Property="BackgroundColor" Value="#EEE"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+
+            <Style x:Key="RedButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#B22222"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="30"/>
+            </Style>
+
+            <Style x:Key="Titulo" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="#3F51B5"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="30"/>
+            </Style>
+
+            <Style x:Key="LabelRotulo" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="HorizontalTextAlignment" Value="Start"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            </Style>
+
+            <Style x:Key="TextEntrada" TargetType="Entry">             
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="HorizontalTextAlignment" Value="Start"/>
+                <Setter Property="VerticalOptions" Value="StartAndExpand"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

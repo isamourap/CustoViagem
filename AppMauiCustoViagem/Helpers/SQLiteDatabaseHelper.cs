@@ -9,7 +9,7 @@ using AppMauiCustoViagem.Models;
 namespace AppMauiCustoViagem.Helpers
 {
     
-    public class SQLiteDatabaseHelper
+    public class SQLiteDatabaseHelper 
     {
         readonly SQLiteAsyncConnection _conn;
 

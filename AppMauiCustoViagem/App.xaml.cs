@@ -8,5 +8,7 @@
 
             MainPage = new AppShell();
         }
+
+        public static object Db { get; internal set; }
     }
 }

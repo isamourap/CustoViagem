@@ -90,7 +90,7 @@
 
             <Button Text="Calcular"
                     Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="1"
-                    Style="{StaticResource RedButton}"/>
+                    Style="{StaticResource RedButton}" Clicked="Button_Calcular"/>
 
         </Grid>
 

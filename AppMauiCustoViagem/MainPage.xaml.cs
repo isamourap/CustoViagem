@@ -55,31 +55,7 @@ namespace AppMauiCustoViagem
             }
         }
 
-        private async void Button_Clicked_1(object sender, EventArgs e)
-        {
-            try
-            {
-                bool confirmar = await DisplayAlert("Tem certeza?",
-                    "Limpar todos os dados?", "sim", "não");
-
-                if (confirmar)
-                {
-                    etyRendimento.Text = " ";
-                    etyDestino.Text = string.Empty;
-                    etyDistancia.Text = " ";
-                    etyOrigem.Text = " ";
-                    etyPrecoG.Text = " ";
-                   
-
-                    
-                }
-
-            }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Ops", ex.Message, "OK");
-            }
-        }
+        
 
        
     }

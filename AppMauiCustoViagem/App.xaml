@@ -17,13 +17,13 @@
             </Style>
 
             <Style x:Key="RedButton" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#B22222"/>
+                <Setter Property="BackgroundColor" Value="#8A2BE2"/>
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="FontSize" Value="30"/>
             </Style>
 
             <Style x:Key="Titulo" TargetType="Label">
-                <Setter Property="BackgroundColor" Value="#3F51B5"/>
+                <Setter Property="BackgroundColor" Value="#A020F0"/>
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="FontSize" Value="30"/>
             </Style>

@@ -10,7 +10,7 @@
               Padding="5" BackgroundColor="#eee">
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
@@ -46,12 +46,12 @@
                        Style="{StaticResource LabelRotulo }"/>
 
             <Entry x:Name="etyOrigem" Placeholder="Nome da cidade"
-                   Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="1"
+                   Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
                    Keyboard="Text"
                    Style="{StaticResource TextEntrada}"/>
 
             <Entry x:Name="etyDestino" Placeholder="Nome da cidade"
-                       Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="1"
+                       Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
                        Keyboard="Text"
                        Style="{StaticResource TextEntrada}"/>
             
@@ -70,27 +70,22 @@
                        Style="{StaticResource LabelRotulo }"/>
 
             <Entry x:Name="etyDistancia" Placeholder="Km"
-                       Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="1"
+                       Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
                        Style="{StaticResource TextEntrada}"/>
 
             <Entry x:Name="etyRendimento" Placeholder="Km/l"
-                       Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="1"
+                       Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"
                        Style="{StaticResource TextEntrada}"/>
 
             <Entry x:Name="etyPrecoG" Placeholder="R$ 0.0"
-                       Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="1"
+                       Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"
                        Style="{StaticResource TextEntrada}"/>
 
 
-            <Button x:Name="btnPedagio" Text="Adicionar Pedágio"
-                    Grid.Row="8" Grid.Column="2"/>
-
-            <Button x:Name="btnLista" Text="Lista de Pedágio"
-                    Grid.Row="8" Grid.Column="1"/>
 
 
             <Button Text="Calcular"
-                    Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2"
+                    Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="3"
                     Style="{StaticResource RedButton}" Clicked="Button_Calcular"/>
 
         </Grid>

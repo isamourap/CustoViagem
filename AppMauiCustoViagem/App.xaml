@@ -23,7 +23,7 @@
             </Style>
 
             <Style x:Key="Titulo" TargetType="Label">
-                <Setter Property="BackgroundColor" Value="#A020F0"/>
+                <Setter Property="BackgroundColor" Value="#8A2BE2"/>
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="FontSize" Value="30"/>
             </Style>
